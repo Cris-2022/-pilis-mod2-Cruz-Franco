@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*En root defino variables de CSS*/
+:root {
+    --bg-color:grey;
+    --text-color:#ffff;
+
+}
+body {
+    font-family: 'Cousine', monospace;
+    background-color: var(--bg-color);
+    color:var(--text-color);
+}
+a {
+    color: var(--text-color);
+}
+footer {
+    /*Posiciono debajo de todo el footer con position y bottom
+    position: fixed;
+    bottom: 0;
+    Espaciado del elemento respecto al resto con padding*/
+    padding: 20px;
+    /*Linea de separacion*/
+    border-top: 1px solid black;
+    /*La linea ocupa toda la pantalla*/
+    width: 100%;
+    /*Se centra el tecto*/
+    text-align: center;
+}
+/*Navbar*/
+
+#navbar {
+    overflow: hidden;
+    border-width: 1px solid black;
+    background: #ffc300;
+    float: none;
+    position: fixed;
+    bottom: auto;
+    width: 100%;
+}
+
+#navbar a {
+    /*Escrito asi se estiliza al elemento a dentro de la clase navbar*/
+    color: #fefffe;
+    font-weight: bold;
+
+}
+
+#navbar .logo {
+    /*Escrito asi se estiliza a la clase logo dentro de la clase navbar*/
+    filter: brightness(1.1);
+    /*Quita el fondo de la img png*/
+    mix-blend-mode: multiply;
+    /*Quita el fondo de la img png*/
+    height: 200px;
+    float: right;
+}
+
+#navbar ul {
+    list-style: none;
+    float: left;
+    padding-top: 30px;
+    /*separacion parte superior*/
+}
+
+#navbar ul li {
+    float: left;
+    /*pone un item alado de otro*/
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    /*separacion entre items*/
+    text-align: center;
+    margin: 5px;
+    /*defino borde de cada item*/
+    background: #6d676e;
+    /*fondo de color estatico de cada item*/
+    color: #fefffe;
+    /*color de letra de cada item*/
+}
+
+#navbar ul li a:hover {
+    background: #895737;
+}
+
+/*Home*/
+#Home {
+    overflow: hidden;
+    border: 1px solid;
+    background: #ffc300;
+    margin-top: 10px;
+}
+
+#Home .home-img img {
+    height: 500px;
+    width: 500px;
+    float: right;
+    background: #6d676e;
+    margin-top: 70px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    width: 45%;
+    padding: 50px;
+}
+#Home .noticias-title {
+    float: left;
+    text-align: center;
+    background: #6d676e;
+    color: #fefffe;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 45%;
+    font-weight: bold;
+}
+/*Evento*/
+#Evento {
+    overflow: hidden;
+    border: 1px solid;
+    background: #ffc300;
+    margin-top: 10px;
+}
+
+#Evento .evento-title {
+    float: left;
+    text-align: center;
+    background: #6d676e;
+    color: #fefffe;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 170px;
+    width: 45%;
+    font-weight: bold;
+}
+
+#Evento .evento-image img {
+    height: 500px;
+    width: 500px;
+    float: right;
+    background: #6d676e;
+    margin-top: 70px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    width: 45%;
+    padding: 50px;
+    
+
+}
+
+/*Nosotros*/
+#Nosotros {
+    overflow: hidden;
+    border: 1px solid;
+    background: #ffc300;
+    margin-top: 10px;
+}
+
+#Nosotros .nosotros-title {
+    float: left;
+    text-align: center;
+    background: #6d676e;
+    color: #fefffe;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 170px;
+    width: 45%;
+    font-weight: bold;
+}
+
+#Nosotros .nosotros-image img {
+    height: 500px;
+    width: 500px;
+    float: right;
+    background: #6d676e;
+    margin-top: 70px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    width: 45%;
+    padding: 50px;
+    
+
+}
