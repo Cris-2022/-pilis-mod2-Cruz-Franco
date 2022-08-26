@@ -1,47 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /*En root defino variables de CSS*/
 :root {
-    --bg-color:grey;
-    --text-color:#ffff;
+    --bg-color: #ccd5ae;
+    --text-color: #ffff;
 
 }
+
 body {
-    font-family: 'Cousine', monospace;
+    font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
-    color:var(--text-color);
+    color: var(--text-color);
 }
+
 a {
     color: var(--text-color);
 }
-footer {
-    /*Posiciono debajo de todo el footer con position y bottom
-    position: fixed;
-    bottom: 0;
-    Espaciado del elemento respecto al resto con padding*/
-    padding: 20px;
-    /*Linea de separacion*/
-    border-top: 1px solid black;
-    /*La linea ocupa toda la pantalla*/
-    width: 100%;
-    /*Se centra el tecto*/
-    text-align: center;
-}
+
 /*Navbar*/
 
 #navbar {
-    overflow: hidden;
     border-width: 1px solid black;
-    background: #ffc300;
-    float: none;
+    background-image: url(./imagenes/juyy.png);
     position: fixed;
-    bottom: auto;
-    width: 100%;
+    width: 98%;
+    border-radius: 15px;
+    border: solid black;
 }
 
 #navbar a {
     /*Escrito asi se estiliza al elemento a dentro de la clase navbar*/
     color: #fefffe;
     font-weight: bold;
+    /*text decoration quita el subrayado*/
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: solid black;
 
 }
 
@@ -51,20 +46,18 @@ footer {
     /*Quita el fondo de la img png*/
     mix-blend-mode: multiply;
     /*Quita el fondo de la img png*/
-    height: 200px;
+    height: 120px;
     float: right;
 }
 
 #navbar ul {
+    /*le quito los puntos a las botoneras*/
     list-style: none;
     float: left;
-    padding-top: 30px;
-    /*separacion parte superior*/
 }
 
 #navbar ul li {
     float: left;
-    /*pone un item alado de otro*/
 }
 
 #navbar ul li a {
@@ -74,7 +67,7 @@ footer {
     text-align: center;
     margin: 5px;
     /*defino borde de cada item*/
-    background: #6d676e;
+    background: #d4a373;
     /*fondo de color estatico de cada item*/
     color: #fefffe;
     /*color de letra de cada item*/
@@ -88,44 +81,55 @@ footer {
 #Home {
     overflow: hidden;
     border: 1px solid;
-    background: #ffc300;
+    background-image: url(./imagenes/juyy.png);
     margin-top: 10px;
 }
 
 #Home .home-img img {
-    height: 500px;
-    width: 500px;
+    height: 340px;
+    width: 200px;
     float: right;
-    background: #6d676e;
-    margin-top: 70px;
+    margin-top: 150px;
     margin-right: 10px;
     margin-bottom: 70px;
     width: 45%;
-    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 10px;
 }
+
+#Home .miau {
+    filter: brightness(1.1);
+    /*Quita el fondo de la img png*/
+    mix-blend-mode: multiply;
+    /*Quita el fondo de la img png*/
+}
+
 #Home .noticias-title {
     float: left;
     text-align: center;
-    background: #6d676e;
-    color: #fefffe;
-    margin-top: 70px;
-    margin-left: 10px;
-    margin-bottom: 50px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    width: 45%;
+    color: var(--text-color);
     font-weight: bold;
+    margin-top: 270px;
+    margin-left: 10px;
+    background-color: #d4a373;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 45%;
+    border-radius: 10px;
+    border: solid 5px black;
 }
+
 /*Evento*/
 #Evento {
     overflow: hidden;
     border: 1px solid;
-    background: #ffc300;
+    background: #d4a373;
     margin-top: 10px;
 }
 
 #Evento .evento-title {
-    float: left;
+    float: right;
     text-align: center;
     background: #6d676e;
     color: #fefffe;
@@ -138,17 +142,22 @@ footer {
     font-weight: bold;
 }
 
-#Evento .evento-image img {
+#Evento .evento-image video {
     height: 500px;
     width: 500px;
-    float: right;
-    background: #6d676e;
+    float: left;
+    background-image: url(./imagenes/sinletras.png);
     margin-top: 70px;
     margin-right: 10px;
     margin-bottom: 70px;
     width: 45%;
-    padding: 50px;
-    
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+#Evento video {
+    padding: 105px;
 
 }
 
@@ -184,6 +193,35 @@ footer {
     margin-bottom: 70px;
     width: 45%;
     padding: 50px;
-    
 
+
+}
+
+/*Footer*/
+#footer-clima {
+    background-color: #d4a373;
+    overflow: hidden;
+    border: 1px solid;
+    background: #d4a373;
+    margin-top: 10px;
+}
+#footer-clima .clima {
+    float: left;
+    text-align: center;
+    background:#6d676e;
+    color: #fefffe;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.information-container {
+    display: flex;
+    padding-top: 10px;
+}
+.info {
+    margin-left: 5px;
+    padding: 1px;
+    font-weight: bold;
 }
