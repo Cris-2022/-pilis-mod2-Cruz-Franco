@@ -30,7 +30,6 @@ function onClick (event) {
     console.log("click...");
     console.log(event);
   
-  
     const mensaje = {
       name: document.getElementById('emp-nombre').value,
       rubro: document.getElementById('emp-sector').value,

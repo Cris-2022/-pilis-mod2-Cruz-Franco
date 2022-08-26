@@ -9,33 +9,58 @@
     <title>Expojuy</title>
 </head>
 <body>
-    <header id="mainheader">
-        <nav id="navbar">
-            <div class="container">
-                <img class="logo" src="imagenes/logoo.png" alt="">
-                <ul>
-                    <li><a href="#Nosotros">Nosotros</a></li>
-                    <li><a href="#Evento">EL evento</a></li>
-                    <li><a href="#contact">Regístrate</a></li>
-                </ul>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img class="logo" src="#" alt="">
             </div>
+        </div>
+        <div class="espacio">
+            <div class="logo">
+                <img class="logo" src="#" alt="">
+            </div>
+        </div>
+        <nav class="nav2">
+            <div class="logo">
+                <img class="logo" src="assets/logo.PNG" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="#Nosotros">Quienes somos</a></li>
+                <li><a href="#Evento">Sobre el evento</a></li>
+                <li><a href="#contact">Regístrate</a></li>
+                <li><a href="#clima">Ubicacion y Clima</a></li>
+            </ul>
         </nav>
-        <div id="Home">
-            <div class="container">
-                <div class="home-img">
-                    <img src="imagenes/juyy.png" alt="">
-                    <div class="noticias-title">
-                        <h2>EXPOJUY</h2>
-                        <h3>Forma parte del evento más importante de
-                            las diferentes actividades económicas de Jujuy
-                        </h3>
-                    </div>
+    </header>
 
+    <main>
+        <!-- SLIDER-seccion para modificar -->
+        <div class="noticias">
+            <h2>EXPOJUY</h2>
+            <h3>Forma parte del evento más importante de
+                las diferentes actividades económicas de Jujuy
+            </h3>
+        </div>
+        <div class="home-img">
+            <img src="imagenes/juyy.png" alt="">
+        </div>
+
+        <!-- CUERPO -->
+        <section class="nosotros" id="Nosotros">
+            <div class="container">
+                <div class="nosotros-title">
+                    <h3>Nosotros asdfasdfasdfasdfasdfasdfñadkfjñasdfksdsdfdfasdfasdfasd</h3>
+                    <p>INFO DE LOS ORGANIZADORES</p>
+                    <a href="https://www.google.com/search?q=covid-19+y+viruela+del+mono&biw=1366&bih=558&tbm=nws&ei=vMf-YuC5Ko3k1sQP-MSCiAU&oq=covid-19+y+virue&gs_lcp=Cgxnd3Mtd2l6LW5ld3MQAxgAMgUIABCABDIGCAAQHhAWMgkIABAeEMcDEBZQwAVYqAZgqQ1oAHAAeACAAfIBiAHzBJIBBTAuMi4xmAEAoAEBwAEB&sclient=gws-wiz-news"
+                        target="_blank">HAZ CLICK AQUÍ PARA LAS NOTICIAS</a>
+                </div>
+                <div class="nosotros-image">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EUglQ99Cu9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-    </header>
-    <main>
-        <section id="Evento">
+        </section>
+
+        <section class="evento" id="Evento">
             <div class="container">
                 <div class="evento-title">
                     <h3>EXPOJUY</h3>
@@ -44,93 +69,79 @@
                         target="_blank">HAZ CLICK AQUÍ PARA LAS NOTICIAS</a>
                 </div>
                 <div class="evento-image">
-                    <img src="imagenes/pande.jpg" alt="">
+                    <img class='imagenes' src="assets/expojuy-jujuy-agosto.jpeg" alt="">
                 </div>
             </div>
         </section>
-        <section id="contact">
-    
-        </section>
-        <section id="Nosotros">
-            <div class="container">
-                <div class="nosotros-title">
-                    <h3>Nosotros</h3>
-                    <p>INFO DE LOS ORGANIZADORES</p>
-                    <a href="https://www.google.com/search?q=covid-19+y+viruela+del+mono&biw=1366&bih=558&tbm=nws&ei=vMf-YuC5Ko3k1sQP-MSCiAU&oq=covid-19+y+virue&gs_lcp=Cgxnd3Mtd2l6LW5ld3MQAxgAMgUIABCABDIGCAAQHhAWMgkIABAeEMcDEBZQwAVYqAZgqQ1oAHAAeACAAfIBiAHzBJIBBTAuMi4xmAEAoAEBwAEB&sclient=gws-wiz-news"
-                        target="_blank">HAZ CLICK AQUÍ PARA LAS NOTICIAS</a>
-                </div>
-                <div class="nosotros-image">
-                    <img src="imagenes/pande.jpg" alt="">
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div>
-                 <!-- FORMULARIO -->
-        <form action="" id="formulario">
-            <h3>REGISTRARSE PARA PARTICIPAR</h3>
-            <input type="text" id="emp-nombre" placeholder="nombre de la empresa"><br>
-            <input type="text" id="emp-sector" placeholder="sector (industria)">
-            <input type="text" id="emp-produccion" placeholder="producto o servicio que ofrese">
-            <p>Amplie la actividad que desarrolla la empresa</p>
-            <textarea name="emp-info" id="emp-info" cols="40" rows="10" placeholder="Escriba aquí..."></textarea><br>
-            <p>Ubicación</p>
-            <label for="departamentos">Departamento</label>
-            <select name="emp-ubi" id="departamento"> 
-                <optgroup>
-                    <option>-Seleccione-</option> 
-                    <option>Cochinoca</option>
-                    <option>Dr.Manuel Belgrano</option>
-                    <option>El Carmen</option>
-                    <option>Humahuaca</option>
-                    <option>Ledesma</option>
-                    <option>Palpalá</option>
-                    <option>Rinconada</option>
-                    <option>San Antonio</option>
-                    <option>San Pedro</option>
-                    <option>Santa Bárbara</option>
-                    <option>Santa Catalina</option>
-                    <option>Susques</option>
-                    <option>Tilcara</option>
-                    <option>Tumbaya</option>
-                    <option>Valle Grande</option>
-                    <option>Yavi</option>
-                </optgroup>
-            </select>
-            <label for="localidad">Localidad</label>
-            <select name="emp-local" id="localidad">
-                <optgroup>
-                    <option value="">-Seleccione-</option>
-                    <option>Guerrero</option>
-                    <option>La Almona</option>
-                    <option>León</option>
-                    <option>Los Nogales</option>
-                    <option>Lozano</option>
-                    <option>Ocloyas</option>
-                    <option>San Pablo de Reyes</option>
-                    <option>San Salvador de Jujuy</option>
-                    <option>Yala</option>
-                </optgroup>
-            </select>
-            <input type="text" id="emp-direc" placeholder="Dirección"><br>
-            <p>Datos de Contacto</p>
-            <input type="text" id="nombre" placeholder="Nombre">
-            <input type="text" id="apellido" placeholder="Apellido"><br>
-            <input type="email" name="correo" id="email" placeholder="correo">
-            <input type="number" name="telef" id="telefono" placeholder="Teléfono"><br>
-    
-            <input type="checkbox" name="" id="">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a><br>
-            <button id="enviar" class="enviar" style="background-color: none;">Enviar</button>
 
-        </form>
+        <section class="form" id="contact">
+            <div class="form-container">
+                 <!-- FORMULARIO -->
+                <form action="" id="formulario">
+                    <h3>Registrese para participar</h3>
+                    <input class="controls" type="text" id="emp-nombre" placeholder="nombre de la empresa"  ><br>
+                    <input class="controls" type="text" id="emp-sector" placeholder="sector (industria)"  >
+                    <input class="controls" type="text" id="emp-produccion" placeholder="producto o servicio que ofrese"  >
+                    <p>Amplie la actividad que desarrolla la empresa</p><br>
+                    <textarea class="controls" name="emp-info" id="emp-info" cols="40" rows="10" placeholder="Escriba aquí..."></textarea><br>
+                    <p style="text-align: center;">Ubicación</p><br>
+                    <label for="departamentos">Departamento</label><br><br>
+                    <select class="controls" name="emp-ubi" id="departamento"> 
+                        <optgroup>
+                            <option>-Seleccione-</option> 
+                            <option>Cochinoca</option>
+                            <option>Dr.Manuel Belgrano</option>
+                            <option>El Carmen</option>
+                            <option>Humahuaca</option>
+                            <option>Ledesma</option>
+                            <option>Palpalá</option>
+                            <option>Rinconada</option>
+                            <option>San Antonio</option>
+                            <option>San Pedro</option>
+                            <option>Santa Bárbara</option>
+                            <option>Santa Catalina</option>
+                            <option>Susques</option>
+                            <option>Tilcara</option>
+                            <option>Tumbaya</option>
+                            <option>Valle Grande</option>
+                            <option>Yavi</option>
+                        </optgroup>
+                    </select><br>
+                    <label for="localidad">Localidad</label><br><br>
+                    <select class="controls" name="emp-local" id="localidad">
+                        <optgroup>
+                            <option value="">-Seleccione-</option>
+                            <option>Guerrero</option>
+                            <option>La Almona</option>
+                            <option>León</option>
+                            <option>Los Nogales</option>
+                            <option>Lozano</option>
+                            <option>Ocloyas</option>
+                            <option>San Pablo de Reyes</option>
+                            <option>San Salvador de Jujuy</option>
+                            <option>Yala</option>
+                        </optgroup>
+                    </select>
+                    <input class="controls" type="text" id="emp-direc" placeholder="Dirección"  ><br>
+                    <p style="text-align: center;" >Datos de Contacto</p><br>
+                    <input class="controls" type="text" id="nombre" placeholder="Nombre"  >
+                    <input class="controls" type="text" id="apellido" placeholder="Apellido"  ><br>
+                    <input class="controls" type="email" name="correo" id="email" placeholder="correo">
+                    <input class="controls" type="number" name="telef" id="telefono" placeholder="Teléfono"  ><br>
+                
+                    <input type="checkbox" name="" id=""> Estoy de acuerdo con los <a href="#" style="color: turquoise
+                    ">Terminos y Condiciones</a><br><br>
+                    <button class="enviar" id="enviar" style="background-color: none;">Enviar</button>
+                
+                </form>
         <!-- FORMULARIO -->
 
             </div>
         </section>
-       
     </main>
+
     <footer>
-        <div class="clima">
+        <div class="clima" id="clima">
             Lugar:
             <div class="info" id="location"></div>
             Visibilidad:

@@ -1,189 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*En root defino variables de CSS*/
-:root {
-    --bg-color:grey;
-    --text-color:#ffff;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* MENU DE NAVEGACIÓN */
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family:'intere', sans-serif;
+    margin: 0px;
+    background:linear-gradient( #efefef,  #63b995, #326273);
+}
+main{
 
 }
-body {
-    font-family: 'Cousine', monospace;
-    background-color: var(--bg-color);
-    color:var(--text-color);
-}
-a {
-    color: var(--text-color);
-}
-footer {
-    /*Posiciono debajo de todo el footer con position y bottom
-    position: fixed;
-    bottom: 0;
-    Espaciado del elemento respecto al resto con padding*/
-    padding: 20px;
-    /*Linea de separacion*/
-    border-top: 1px solid black;
-    /*La linea ocupa toda la pantalla*/
+
+.nav {
     width: 100%;
-    /*Se centra el tecto*/
-    text-align: center;
-}
-/*Navbar*/
-
-#navbar {
-    overflow: hidden;
-    border-width: 1px solid black;
-    background: #ffc300;
-    float: none;
+    display: flex;
+    height: 0.95cm;
+    background-color: #0b3c49;
+    align-items: center;
+    justify-content: left;
     position: fixed;
-    bottom: auto;
+    box-shadow: 0px 1px 0.2cm black;
+}
+.espacio {
     width: 100%;
+    display: flex;
+    height: 1cm;
+    background-color: #0b3c49;
 }
 
-#navbar a {
-    /*Escrito asi se estiliza al elemento a dentro de la clase navbar*/
-    color: #fefffe;
-    font-weight: bold;
+.nav2 {
 
+    width: 100%;
+    display: flex;
+    height: 2.2cm;
+    padding: 15px 0px 15px 15px;
+    background-color: #195f72;
+    align-items: center;
+    justify-content: left;
+    box-shadow: 0px 0px 0.3cm black;
 }
 
-#navbar .logo {
-    /*Escrito asi se estiliza a la clase logo dentro de la clase navbar*/
-    filter: brightness(1.1);
-    /*Quita el fondo de la img png*/
-    mix-blend-mode: multiply;
-    /*Quita el fondo de la img png*/
-    height: 200px;
-    float: right;
+.nav2 .menu a{
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    transition: all 0.3s ease;
 }
 
-#navbar ul {
+.nav2 .menu a:hover{
+    border-radius: 15px;
+    padding: 7px 12px;
+    background: white;
+    color: black;
+}
+.menu{
     list-style: none;
-    float: left;
-    padding-top: 30px;
-    /*separacion parte superior*/
-}
-
-#navbar ul li {
-    float: left;
-    /*pone un item alado de otro*/
-}
-
-#navbar ul li a {
-    display: block;
-    padding: 20px;
-    /*separacion entre items*/
-    text-align: center;
-    margin: 5px;
-    /*defino borde de cada item*/
-    background: #6d676e;
-    /*fondo de color estatico de cada item*/
-    color: #fefffe;
-    /*color de letra de cada item*/
-}
-
-#navbar ul li a:hover {
-    background: #895737;
-}
-
-/*Home*/
-#Home {
-    overflow: hidden;
-    border: 1px solid;
-    background: #ffc300;
-    margin-top: 10px;
-}
-
-#Home .home-img img {
-    height: 500px;
-    width: 500px;
-    float: right;
-    background: #6d676e;
-    margin-top: 70px;
-    margin-right: 10px;
-    margin-bottom: 70px;
-    width: 45%;
-    padding: 50px;
-}
-#Home .noticias-title {
-    float: left;
-    text-align: center;
-    background: #6d676e;
-    color: #fefffe;
-    margin-top: 70px;
-    margin-left: 10px;
-    margin-bottom: 50px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    width: 45%;
-    font-weight: bold;
-}
-/*Evento*/
-#Evento {
-    overflow: hidden;
-    border: 1px solid;
-    background: #ffc300;
-    margin-top: 10px;
-}
-
-#Evento .evento-title {
-    float: left;
-    text-align: center;
-    background: #6d676e;
-    color: #fefffe;
-    margin-top: 70px;
-    margin-left: 10px;
-    margin-bottom: 50px;
-    padding-top: 200px;
-    padding-bottom: 170px;
-    width: 45%;
-    font-weight: bold;
-}
-
-#Evento .evento-image img {
-    height: 500px;
-    width: 500px;
-    float: right;
-    background: #6d676e;
-    margin-top: 70px;
-    margin-right: 10px;
-    margin-bottom: 70px;
-    width: 45%;
-    padding: 50px;
+    display: flex;
     
-
 }
 
-/*Nosotros*/
-#Nosotros {
-    overflow: hidden;
-    border: 1px solid;
-    background: #ffc300;
-    margin-top: 10px;
+.nav2 .logo{
+    height: 2cm;
 }
 
-#Nosotros .nosotros-title {
-    float: left;
-    text-align: center;
-    background: #6d676e;
-    color: #fefffe;
-    margin-top: 70px;
-    margin-left: 10px;
-    margin-bottom: 50px;
-    padding-top: 200px;
-    padding-bottom: 170px;
-    width: 45%;
-    font-weight: bold;
+                        /* CUERPO */
+.container {
+    max-width: 100%;
+    overflow: auto;
+    padding: 0px;
+}
+.imagenes{
+    width: 55%;
 }
 
-#Nosotros .nosotros-image img {
-    height: 500px;
-    width: 500px;
+/* NOSOSTROS */
+
+.nosotros{
+    padding: 100px;
+}
+.nosotros-title {
+    padding-top: 340px;
     float: right;
-    background: #6d676e;
-    margin-top: 70px;
-    margin-right: 10px;
-    margin-bottom: 70px;
-    width: 45%;
-    padding: 50px;
+    width: 50%;
     
+}
+.nosotros-image {
+    float: left;
+    width: 50%;
+}
 
+
+/* EVENTO */
+
+.evento{
+    padding: 130px;
+}
+.evento-title {
+    padding-top: 340px;
+    float: left;
+    width: 45%;
+
+}
+
+.evento-imgage {
+    float: right;
+    width: 55%;
+}
+
+
+/* FORMULARIO */
+.form{
+    background-image: url('assets/fondo-formulario.png');
+    background-size: cover;
+    padding: 2cm;
+}
+
+.form-container {
+    width: 500px;
+    background: #24303c;
+    margin: auto;
+    margin-top: 100px;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 7px 13px 37px black;
+}
+
+.form-container .controls {
+    width: 97%;
+    background: #24303c;
+    margin-bottom: 25px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #1f53c5;
+    font-family: 'Calibri';
+    font-size: 20px;
+    color: white;
+}
+
+.form-container form h3{
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.enviar{
+    width: 40%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin-left: 30%;
+    border-radius: 10px;
+    font-size: 20px;
 }
