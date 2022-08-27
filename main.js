@@ -1,4 +1,4 @@
-/* CLIMA */
+                /* CLIMA */
 fetch("https://api.openweathermap.org/data/2.5/weather?units=metric&lat=-24.183133853538152&lon=-65.33130863194877&appid=c7eb81a7e5dabe1d37507274a340061b")
     .then(response => response.json())
     .then(json => setdata(json))
